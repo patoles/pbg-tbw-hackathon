@@ -1,0 +1,112 @@
+.uiCard {
+	width: 22rem;
+	max-width: 100%;
+	height: fit-content;
+	border-radius: 1rem;
+	cursor: pointer;
+	-webkit-transform: scale3d(1, 1, 1);
+	transform: scale3d(1, 1, 1);
+	-webkit-transition: -webkit-transform 0.2s linear;
+	transition: -webkit-transform 0.2s linear;
+	overflow: hidden;
+	flex-shrink: 0;
+	outline: none;
+}
+.uiCard:hover {
+	cursor: pointer;
+	-webkit-transform: scale3d(1.05, 1.05, 1);
+	transform: scale3d(1.05, 1.05, 1);
+}
+.uiCard.lh .content {
+	height: 10rem;
+}
+.uiCard.lh .content .titleContainer .title {
+	font-size: 1.6rem;
+}
+.uiCard.lw {
+	width: 45rem;
+}
+.uiCard.sw {
+	width: 10rem;
+}
+.uiCard .content {
+	position: relative;
+	width: 100%;
+	height: 4.5rem;
+	border-radius: 1rem;
+	overflow: hidden;
+}
+.uiCard .content.noBackground {
+	border: 2px solid #fff;
+}
+.uiCard .content .bg {
+	background-size: cover;
+	background-position: center 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+	opacity: 0.6;
+}
+.uiCard .content .bg.fillBackground {
+	background-size: 100% 100%;
+	opacity: 1;
+}
+.uiCard .content .titleContainer {
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	z-index: 1;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.uiCard .content .titleContainer .title {
+	font-family: 'Pixeloid';
+	text-transform: uppercase;
+	color: var(--color-light);
+	font-size: 1rem;
+}
+
+.uiCard .description {
+	background-color: #fff;
+	padding: 0.6rem 0.8rem;
+	font-size: 0.8rem;
+	font-family: 'Pixeloid';
+	color: var(--color-dark);
+	word-break: break-word;
+	border-radius: 0.4rem;
+	margin: 0.3rem 0 0;
+}
+
+.uiCardGroup {
+	display: flex;
+	gap: 1rem;
+	flex-direction: column;
+	max-width: 100%;
+}
+
+.uiCardContainer {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+	justify-content: center;
+	max-width: 50rem;
+	min-width: 320px;
+	width: 100%;
+	max-height: 100%;
+	padding: 2rem 1rem;
+}
+
+@media only screen and (max-width: 780px) {
+	.uiCardContainer {
+		width: 400px;
+		max-width: 100%;
+		gap: 1rem;
+	}
+	.uiCard.lw {
+		width: 22rem;
+	}
+}

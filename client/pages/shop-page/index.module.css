@@ -1,0 +1,38 @@
+.content {
+	display: flex;
+	flex-grow: 1;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	position: relative;
+	z-index: 0;
+}
+.buyModal {
+	text-align: center;
+}
+.buyModal * {
+	font-family: 'Pixeloid';
+}
+.buyModal .text {
+	font-size: 1rem;
+	line-height: 1.4rem;
+}
+.buyModal .text .name {
+	color: var(--color-dark);
+	background-color: #fff;
+	border-radius: 4px;
+	padding: 0 5px;
+	font-size: 0.8rem;
+	text-transform: capitalize;
+}
+.buyModal .text .price {
+	color: var(--color-gold);
+	background-color: #fff;
+	border-radius: 4px;
+	padding: 0 5px;
+}
+.buyModal .balance {
+	font-size: 0.6rem;
+	color: var(--color-blue);
+	margin: 1rem 0;
+}

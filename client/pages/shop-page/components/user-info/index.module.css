@@ -1,0 +1,60 @@
+.userInfo {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 10px 5px 0 0;
+	z-index: 1;
+}
+.userInfo * {
+	font-family: 'Pixeloid';
+}
+.content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: column;
+	gap: 0.5rem;
+}
+.content .coins {
+	border: 2px solid #000;
+	background-color: #fff;
+	border-radius: 8px;
+	padding: 0px 10px;
+	color: var(--color-gold);
+	font-size: 0.8rem;
+	display: flex;
+	align-items: center;
+	height: 1.8rem;
+}
+.content .buyCoins {
+	border: 2px solid #000;
+	background-color: var(--color-blue);
+	border-radius: 8px;
+	padding: 10px;
+	color: #fff;
+	font-size: 0.6rem;
+	cursor: pointer;
+}
+.spinner {
+	width: 1.3rem;
+	height: 1.3rem;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: 0 0;
+	background-image: url('https://res.cloudinary.com/dxlvclh9c/image/upload/v1726558205/pixelbrawlgames/icon/spinner_green_large.png');
+	image-rendering: pixelated;
+	-webkit-animation: spin 3s linear 0s infinite;
+	animation: spin 3s linear 0s infinite;
+	margin: 0 0.3rem 0 0;
+}
+
+@keyframes spin {
+	from {
+		-webkit-transform: rotate3d(0, 0, 1, 0deg);
+		transform: rotate3d(0, 0, 1, 0deg);
+	}
+	to {
+		-webkit-transform: rotate3d(0, 0, 1, 360deg);
+		transform: rotate3d(0, 0, 1, 360deg);
+	}
+}

@@ -1,0 +1,85 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body,
+#root {
+	width: 100%;
+	height: 100%;
+	overscroll-behavior: none;
+	touch-action: none;
+	-webkit-touch-callout: none !important;
+	-webkit-user-select: none !important;
+	user-select: none !important;
+}
+
+a {
+	color: initial;
+	text-decoration: initial;
+	cursor: initial;
+}
+
+:root {
+	--color-light: #ffffff;
+	--color-dark: #000000;
+	--color-green: #95c257;
+	--color-red: #ce2a48;
+	--color-blue: #5757c2;
+	--color-gold: #cd922b;
+}
+
+@font-face {
+	font-family: 'Pixeloid';
+	src: url('https://res.cloudinary.com/dxlvclh9c/raw/upload/v1716816126/pixelbrawlgames/fonts/PixeloidSansBold-PKnYd.ttf')
+		format('truetype');
+	font-display: swap;
+}
+
+.rolling-bg {
+	background-size: 300px 150px;
+	background-position: 0 0;
+	-webkit-animation: rolling-bg-anim 10s linear 0s infinite;
+	animation: rolling-bg-anim 10s linear 0s infinite;
+	image-rendering: pixelated;
+}
+
+.balance {
+	-webkit-animation: balance-anim 4s linear 0s infinite;
+	animation: balance-anim 4s linear 0s infinite;
+}
+
+@keyframes rolling-bg-anim {
+	from {
+		background-position: 0 0;
+	}
+	to {
+		background-position: 300px 150px;
+	}
+}
+
+@keyframes balance-anim {
+	0% {
+		-webkit-transform: rotate3d(0, 0, 1, 0deg);
+		transform: rotate3d(0, 0, 1, 0deg);
+	}
+	25% {
+		-webkit-transform: rotate3d(0, 0, 1, 5deg);
+		transform: rotate3d(0, 0, 1, 5deg);
+	}
+	50% {
+		-webkit-transform: rotate3d(0, 0, 1, 0deg);
+		transform: rotate3d(0, 0, 1, 0deg);
+	}
+	75% {
+		-webkit-transform: rotate3d(0, 0, 1, -5deg);
+		transform: rotate3d(0, 0, 1, -5deg);
+	}
+	100% {
+		-webkit-transform: rotate3d(0, 0, 1, 0deg);
+		transform: rotate3d(0, 0, 1, 0deg);
+	}
+}

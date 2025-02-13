@@ -1,0 +1,111 @@
+.landingPage {
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	padding: 0;
+	overflow: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.content {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.sectionTitle,
+.head,
+.foot {
+	max-width: 640px;
+	width: 100%;
+}
+
+.gradientA {
+	background: rgb(2, 0, 36);
+	background: linear-gradient(
+		90deg,
+		rgba(9, 9, 121, 1) 20%,
+		rgba(0, 212, 255, 1) 100%
+	);
+}
+.gradientA * {
+	color: #fff;
+}
+.gradientB {
+	background: rgb(255, 109, 0);
+	background: linear-gradient(
+		90deg,
+		rgba(255, 109, 0, 1) 20%,
+		rgba(247, 255, 0, 1) 100%
+	);
+}
+.specialA {
+	color: #ffc200;
+}
+
+.leftColumn {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.rightColumn {
+	display: flex;
+	align-items: center;
+}
+.cardTitle {
+	font-size: 1rem;
+	margin: 0 0 0.5rem;
+	width: 100%;
+}
+.cardText {
+	font-size: 0.8rem;
+	white-space: break-spaces;
+}
+
+.sectionTitle {
+	font-weight: bold;
+	font-family: 'Pixeloid';
+	color: #fff;
+	width: 100%;
+	padding: 1.4rem 0 0;
+}
+
+.cardTitleCover {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #ffff;
+	font-weight: bold;
+	font-family: 'Pixeloid';
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+}
+.head {
+	border-bottom: 2px solid #222222;
+}
+.foot {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 2.8rem;
+	display: flex;
+	align-items: center;
+	justify-content: end;
+	padding: 0 1.2rem;
+	border-top: 2px solid #222222;
+	margin: 0 auto;
+}
+.footItem {
+	font-weight: bold;
+	font-family: 'Pixeloid';
+	color: #fff;
+	cursor: pointer;
+}

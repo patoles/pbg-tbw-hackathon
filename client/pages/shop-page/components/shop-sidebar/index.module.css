@@ -1,0 +1,139 @@
+.shopSidebar {
+	height: fit-content;
+	padding: 10px 0 0 5px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	display: flex;
+	flex-direction: row;
+}
+.sidebarWrapper {
+	display: block;
+	width: 200px;
+	-webkit-transition: width 0.2s linear;
+	transition: width 0.2s linear;
+}
+.sidebarWrapper.collapsed {
+	width: 0px;
+	overflow: hidden;
+}
+.sidebarContent {
+	display: block;
+	width: 100%;
+	padding: 8px;
+	border: 2px solid #fff;
+	background-color: #000;
+	border-radius: 16px;
+}
+.sidebarContent.mobile {
+	border-radius: 16px 0 16px 16px;
+}
+.sidebarButton {
+	width: 2rem;
+	height: 2rem;
+	background-color: #fff;
+	border-radius: 0 8px 8px 0;
+	border: 2px solid #fff;
+	border-left: none;
+	display: flex;
+}
+.sidebarButton .buttonIcon {
+	width: 70%;
+	height: 70%;
+	image-rendering: pixelated;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-image: url('https://res.cloudinary.com/dxlvclh9c/image/upload/v1716816921/pixelbrawlgames/icon/left_arrow_black_icon.png');
+	margin: auto;
+	-webkit-transform: rotate3d(0, 0, 1, 0deg);
+	transform: rotate3d(0, 0, 1, 0deg);
+	-webkit-transition: -webkit-transform 0.2s linear;
+	transition: transform 0.2s linear;
+}
+.sidebarButton.collapsed {
+	border-radius: 8px;
+	border-left: 2px solid #fff;
+}
+.sidebarButton.collapsed .buttonIcon {
+	-webkit-transform: rotate3d(0, 0, 1, 180deg);
+	transform: rotate3d(0, 0, 1, 180deg);
+}
+.accordionTitle {
+	background-image: url('https://res.cloudinary.com/dxlvclh9c/image/upload/v1716816925/pixelbrawlgames/img/ui_button_gray_bg.png');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	-webkit-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+.accordionTitleOpen {
+	background-image: url('https://res.cloudinary.com/dxlvclh9c/image/upload/v1716816924/pixelbrawlgames/img/ui_button_bg.png');
+}
+.list {
+	padding: 4px 8px 0;
+}
+.listItem {
+	display: flex;
+	align-items: center;
+	background-color: #fff;
+	padding: 0 10px;
+	height: 30px;
+	cursor: pointer;
+	border-radius: 4px;
+	-webkit-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+	position: relative;
+}
+.listItem:not(:first-child) {
+	margin: 4px 0 0;
+}
+.space {
+	width: 100%;
+	height: 3px; /* -1 to match category spacing */
+}
+.listItem .name {
+	font-family: 'Pixeloid';
+	text-transform: capitalize;
+	color: var(--color-dark);
+	font-size: 0.7rem;
+}
+.listItem.active {
+	background-color: var(--color-green);
+}
+.listItem.active .name {
+	color: var(--color-light);
+}
+.listItem::after {
+	content: '';
+	border: 2px solid transparent;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: calc(100% - 4px);
+	height: calc(100% - 4px);
+	border-radius: 4px;
+	-webkit-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+.listItem.selected::after {
+	border: 2px solid var(--color-gold);
+}
+.icon {
+	width: 20px;
+	height: 20px;
+	margin: 0 0 0 auto;
+	image-rendering: pixelated;
+}
+.icon.equip {
+	background-image: url('https://res.cloudinary.com/dxlvclh9c/image/upload/v1716816919/pixelbrawlgames/icon/equip_icon_dark.png');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+/*
+.listItem.selected .icon.equip {
+	background-image: url('https://res.cloudinary.com/dxlvclh9c/image/upload/v1716816919/pixelbrawlgames/icon/equip_icon_dark.png');
+}
+*/

@@ -1,0 +1,28 @@
+.accordion {
+	width: 100%;
+	margin: 0 0 1px;
+}
+.titleContainer {
+	height: 32px;
+	display: flex;
+	align-items: center;
+	padding: 0 0 0 12px;
+	cursor: pointer;
+}
+.titleIcon {
+	width: 2rem;
+	height: 2rem;
+	margin: 0 0.5rem 0 0;
+	background-color: red;
+}
+.title {
+	font-family: 'Pixeloid';
+	font-size: 0.8rem;
+	text-transform: capitalize;
+}
+.contentWrapper {
+	height: 0px;
+	overflow: hidden;
+	-webkit-transition: height 0.2s linear;
+	transition: height 0.2s linear;
+}

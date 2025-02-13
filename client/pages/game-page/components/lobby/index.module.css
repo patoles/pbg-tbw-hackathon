@@ -1,0 +1,103 @@
+.lobby {
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	flex-direction: column;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.content {
+	background-color: #e4e4e4;
+	flex-direction: column;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 2rem 1rem;
+	border-radius: 8px;
+}
+.content * {
+	user-select: none;
+}
+.timer {
+	font-family: 'Pixeloid';
+	font-size: 1.2rem;
+}
+.queue {
+	margin: 0.8rem 0;
+	width: 100%;
+	padding: 0 1rem;
+}
+
+.queue,
+.queue * {
+	font-family: 'Pixeloid';
+	font-size: 1rem;
+}
+.queue .queueReady {
+	color: rgb(0, 123, 0);
+}
+.queueInfo {
+	display: flex;
+}
+.queueLabel {
+}
+.queueValue {
+	margin: 0 0 0 auto;
+}
+.fee,
+.fee * {
+	font-family: 'Pixeloid';
+	margin: 0 0 0.8rem;
+	font-size: 0.8rem;
+}
+.fee .value {
+	color: var(--color-green);
+}
+.share {
+	margin: 0 0 1.8rem;
+	background-color: rgba(0, 0, 0, 0.3);
+	border: 2px solid rgba(0, 0, 0, 0.8);
+	border-radius: 0.5rem;
+	padding: 1rem 0.2em;
+	display: flex;
+	flex-direction: column;
+	gap: 0.8rem;
+	cursor: pointer;
+}
+.share .text {
+	font-family: 'Pixeloid';
+	font-size: 0.5rem;
+	text-align: center;
+}
+.share .text.focus {
+	font-size: 0.8rem;
+}
+.share .text.valid {
+	color: rgb(0, 123, 0);
+}
+.button {
+	height: 2.5rem;
+	padding: 0 1rem;
+	border-radius: 8px;
+	background-color: black;
+	color: var(--color-light);
+	font-family: 'Pixeloid';
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	font-size: 1.2rem;
+	cursor: pointer;
+	-webkit-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+	user-select: none;
+}
+.button.disabled {
+	border: 2px solid black;
+	color: green;
+	background-color: #fff;
+}
+
+.qrCode {
+	margin: 0 auto;
+}

@@ -1,0 +1,32 @@
+.card {
+	max-width: 640px;
+	width: 100%;
+	cursor: pointer;
+	border-radius: 12px;
+	padding: 0.6rem 1.5rem;
+	display: flex;
+	justify-content: space-between;
+	margin: 1rem 0 0;
+	flex-wrap: wrap;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-color: #262837;
+	image-rendering: pixelated;
+	height: fit-content;
+	-webkit-transform: scale3d(1, 1, 1);
+	transform: scale3d(1, 1, 1);
+	-webkit-transition: -webkit-transform 0.2s linear;
+	transition: -webkit-transform 0.2s linear;
+	position: relative;
+	overflow: hidden;
+}
+.card:hover {
+	-webkit-transform: scale3d(1.05, 1.05, 1);
+	transform: scale3d(1.05, 1.05, 1);
+}
+.card * {
+	font-weight: bold;
+	font-family: 'Pixeloid';
+	color: #fff;
+}

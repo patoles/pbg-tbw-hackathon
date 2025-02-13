@@ -1,0 +1,34 @@
+.infoMessage {
+	position: fixed;
+	top: 4rem;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	padding: 0.4rem 0;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.6);
+	display: flex;
+	align-items: start;
+	justify-content: center;
+	text-transform: uppercase;
+	-webkit-transition: opacity 0.2s linear;
+	transition: opacity 0.2s linear;
+	opacity: 0;
+	font-family: 'Pixeloid';
+	pointer-events: none;
+	text-align: center;
+}
+.infoMessage.show {
+	opacity: 1;
+}
+
+@media only screen and (max-width: 767px) {
+	.infoMessage {
+		font-size: 2rem;
+	}
+}
+@media only screen and (min-width: 768px) {
+	.infoMessage {
+		font-size: 3rem;
+	}
+}

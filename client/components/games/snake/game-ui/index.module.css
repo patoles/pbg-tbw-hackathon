@@ -1,0 +1,130 @@
+.gameUI {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	display: flex;
+}
+.gameUI * {
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.UIPopup {
+	width: 20rem;
+	height: fit-content;
+	padding: 1.3rem;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: 0 0;
+	position: absolute !important;
+	margin: auto 0;
+	top: 0;
+	bottom: 0;
+	image-rendering: pixelated;
+}
+.UIPopup.desktop {
+	height: 7rem;
+	background-image: url('https://res.cloudinary.com/dxlvclh9c/image/upload/v1731913824/pixelbrawlgames/snake/img/ui_help-control_desktop.png');
+}
+.UIPopup.mobile {
+	height: 8.9rem;
+	background-image: url('https://res.cloudinary.com/dxlvclh9c/image/upload/v1731915482/pixelbrawlgames/snake/img/ui_help-control_mobile.png');
+}
+.UIPopup.rewards {
+	background-image: url('https://res.cloudinary.com/dxlvclh9c/image/upload/v1716816927/pixelbrawlgames/img/ui_button_large_bg.png');
+	font-size: 0.8rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.UIPopup.isTelegram {
+	padding: 2rem;
+}
+.reward,
+.reward * {
+	font-family: 'Pixeloid';
+}
+.reward {
+	margin: 0 0 0.8rem 0;
+	background-color: #fff;
+	padding: 0.3rem 0.6rem;
+	border-radius: 8px;
+	border: 2px solid #000;
+}
+.rewards .btnContainer {
+	display: flex;
+	flex-direction: column;
+	gap: 0.4rem;
+}
+
+.UIScore {
+	position: fixed;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	padding: 0.5rem 0 0;
+}
+.UIScoreContent {
+	font-family: 'Pixeloid';
+	padding: 0.2rem 0.8rem;
+	border-radius: 8px;
+	color: var(--color-dark);
+	background-color: #fff;
+	border: 2px solid var(--color-dark);
+	-webkit-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+	font-size: 1.5rem;
+}
+.UIContainer {
+	margin: 0 auto;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 1rem 1rem 0;
+	gap: 0.5rem;
+}
+.UIText {
+	font-family: 'Pixeloid';
+	color: var(--color-light);
+	font-size: 0.8rem;
+}
+.UICell {
+	width: 2.8rem;
+	height: 2.8rem;
+	flex-shrink: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0.4rem 0 0;
+	gap: 0.1rem;
+	background-image: url('https://res.cloudinary.com/dxlvclh9c/image/upload/v1716816923/pixelbrawlgames/icon/ui_icon_bg.png');
+	background-position: 0 0;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.UICell.noLabel {
+	padding: 0;
+	justify-content: center;
+}
+.UICell .cover {
+	width: 1.3rem;
+	height: 1.3rem;
+	flex-shrink: 0;
+	background-size: 100% 100%;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	image-rendering: pixelated;
+}
+.UICell.noLabel .cover {
+	width: 1.5rem;
+	height: 1.5rem;
+}
+.UICell .label {
+	font-family: 'Pixeloid';
+	font-size: 0.7rem;
+	color: #333333;
+}

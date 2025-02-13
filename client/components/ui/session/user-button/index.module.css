@@ -1,0 +1,82 @@
+.userBtnContainer {
+	width: 100%;
+	max-width: 640px;
+	height: 2.8rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 1.2rem;
+	flex-shrink: 0;
+}
+
+.homeBtn {
+	cursor: pointer;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 8px;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: 0 0;
+	background-image: url('https://res.cloudinary.com/dxlvclh9c/image/upload/v1729771589/pixelbrawlgames/img/logo_white.png');
+}
+
+.userBtnClerk {
+	background-color: #000;
+	border-radius: 100%;
+	padding: 2px;
+}
+.userInfoBtn {
+	padding: 0;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+.userInfoBtn .username {
+	font-size: 0.8rem;
+	font-weight: bold;
+	font-family: 'Pixeloid';
+	border: 2px solid #000;
+	border-radius: 16px;
+	color: #000;
+	padding: 0.4rem 0.6rem;
+	position: relative;
+	cursor: pointer;
+}
+.userInfoBtn .coins {
+	font-size: 0.8rem;
+	font-weight: bold;
+	color: var(--color-gold);
+	text-align: center;
+	font-family: 'Pixeloid';
+}
+
+.userInfoBtn .username .dropdown {
+	max-width: 200px;
+	background-color: #000;
+	position: absolute;
+	top: 100%;
+	right: 0;
+	border-radius: 8px 0 8px 8px;
+	overflow: hidden;
+	z-index: 100;
+}
+.userInfoBtn .username .dropdown .dropdownOption {
+	width: 100%;
+	height: 2.2rem;
+	color: #fff;
+	font-family: 'Pixeloid';
+	font-size: 0.8rem;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	padding: 0 0.6rem 0;
+	white-space: pre;
+	cursor: pointer;
+}
+.userInfoBtn .username .dropdown .dropdownOption:not(:last-child) {
+	border-bottom: 2px solid #fff;
+}
+.userInfoBtn .username .dropdown .dropdownOption:hover {
+	color: #000;
+	background-color: #fff;
+}

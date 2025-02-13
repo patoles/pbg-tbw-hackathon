@@ -1,0 +1,17 @@
+.messageBox {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 15rem;
+	background-color: rgba(0, 0, 0, 0.6);
+	padding: 0.5rem 0.5rem 0.5rem 1rem;
+	border-radius: 0 0 0 16px;
+}
+.messageEntry {
+	color: var(--color-light);
+	font-size: 0.8rem;
+	font-family: 'Pixeloid';
+}
+.messageEntry:not(:first-child) {
+	margin: 0.2rem 0 0;
+}

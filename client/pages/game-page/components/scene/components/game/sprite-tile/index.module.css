@@ -1,0 +1,31 @@
+.labelContainer {
+	padding: 2.5rem 0 0;
+	pointer-events: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	opacity: 0.8;
+}
+.label {
+	font-size: 0.7rem;
+	font-family: 'Pixeloid';
+	background-color: #fff;
+	border-radius: 8px;
+	padding: 0 4px;
+}
+
+.label.localPlayer {
+	background-color: #94ff00;
+	border: 2px solid red;
+	animation: blink-border 2s infinite;
+}
+
+@keyframes blink-border {
+	0%,
+	100% {
+		border-color: red;
+	}
+	50% {
+		border-color: transparent;
+	}
+}

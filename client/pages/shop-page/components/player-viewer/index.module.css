@@ -1,0 +1,18 @@
+.playerViewer {
+	width: 200px;
+	height: 200px;
+	flex-shrink: 0;
+	position: relative;
+	background-color: #c0c0c0;
+	border-radius: 16px;
+	border: 8px solid #000;
+}
+.viewerLayer {
+	position: absolute;
+	image-rendering: pixelated;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}

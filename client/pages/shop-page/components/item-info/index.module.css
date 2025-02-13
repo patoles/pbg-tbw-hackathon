@@ -1,0 +1,24 @@
+.itemInfo {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	padding: 0.8rem 0 0;
+	height: 7.5rem;
+}
+.itemInfo * {
+	font-family: 'Pixeloid';
+}
+.name {
+	color: var(--color-light);
+	text-transform: capitalize;
+	text-decoration: underline;
+}
+.price {
+	font-size: 0.8rem;
+	color: var(--color-gold);
+	margin: 0.5rem 0 0;
+}
+.price.free {
+	color: var(--color-green);
+}

@@ -1,0 +1,38 @@
+.button {
+	color: var(--color-light);
+	background-color: transparent;
+	font-family: 'Pixeloid';
+	height: 2.5rem;
+	width: 12.26rem;
+	font-size: 1rem;
+	margin: auto;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	-webkit-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-shrink: 0;
+	cursor: pointer;
+	border: none;
+	outline: none;
+}
+.button.green {
+	background-image: url('https://res.cloudinary.com/dxlvclh9c/image/upload/v1716816926/pixelbrawlgames/img/ui_button_green_bg.png');
+}
+.button.red {
+	background-image: url('https://res.cloudinary.com/dxlvclh9c/image/upload/v1716816931/pixelbrawlgames/img/ui_button_red_bg.png');
+}
+.button.gold {
+	background-image: url('https://res.cloudinary.com/dxlvclh9c/image/upload/v1716816924/pixelbrawlgames/img/ui_button_bg.png');
+}
+.button.blue {
+	background-image: url('https://res.cloudinary.com/dxlvclh9c/image/upload/v1716816925/pixelbrawlgames/img/ui_button_blue_bg.png');
+}
+.button.disabled {
+	opacity: 0.8;
+	pointer-events: none;
+	background-image: url('https://res.cloudinary.com/dxlvclh9c/image/upload/v1716816925/pixelbrawlgames/img/ui_button_gray_bg.png');
+}
